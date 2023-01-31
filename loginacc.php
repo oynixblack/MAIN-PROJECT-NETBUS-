@@ -8,7 +8,7 @@
                                 $mypass = $_POST['password'];
 
 
-                                    $sql = "SELECT * FROM login WHERE username = '$myuser' and password = '$mypass' and type1='admin' and status='1'";
+                                    $sql = "SELECT * FROM login WHERE username = '$myuser' and password = '$mypass' and type1='admin' and status='1' AND verified='1'";
                                     $result = mysqli_query($conn, $sql);
 
                                     $COUNT = mysqli_num_rows($result);
@@ -24,7 +24,7 @@
 
                             
                             
-                                    $sqll = "SELECT * FROM login WHERE username = '$myuser' and password = '$mypass' and type1='user' and status='1'";
+                                    $sqll = "SELECT * FROM login WHERE username = '$myuser' and password = '$mypass' and type1='user' and status='1' AND verified='1'";
                                     $result1 = mysqli_query($conn, $sqll);
 
                                     $COUNT1 = mysqli_num_rows($result1);
