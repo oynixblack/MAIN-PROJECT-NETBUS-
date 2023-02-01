@@ -25,7 +25,7 @@ function init() {
     toggle.addEventListener('click', () => {
       speech.listening = !speech.listening;
       if (speech.listening) {
-        toggle.classList.add('listening');
+        qoggle.classList.add('listening');
         toggle.innerText = 'Listening ...';
         speech.recognition.start();
       }

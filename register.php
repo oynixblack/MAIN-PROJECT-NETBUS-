@@ -278,7 +278,7 @@ function Validate1()
 {
     var val = document.getElementById('lname').value;
 
-    if (!val.match(/^[A-Z][a-z]{0,}$/)) 
+    if (!val.match(/^[A-Z][a-z]{3,}$/)) 
     {
         document.getElementById('msg2').innerHTML="Start with a Capital letter & Only alphabets without space are allowed!!";
 		            document.getElementById('lname').value = "";

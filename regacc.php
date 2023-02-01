@@ -75,7 +75,7 @@
            $sql = "INSERT INTO register (loginid,fname,lname,email,adress,phone,gender,estatus) VALUES ('$loid','$fname','$lname','$email','$adress','$phone','$gender','1')";
            if($conn->query($sql)=== TRUE && sendMail($email, $code))
            {
-             echo "<script> alert('Verification link is send to registered email'); </script>";
+             echo "<script> alert('Please do Verify the link send to registered email to LOGIN'); </script>";
      //header("location:user-login.php");
            } }
          }
